@@ -24,7 +24,7 @@ public @interface Deprecated {
     /**
      * JEP 277-defined reasons and associated explanations.
      */
-    public enum Reason {
+    enum Reason {
         /**
          * This API has been deprecated without any reason having been given.
          * This is the default value; everything that's deprecated today
