@@ -12,7 +12,7 @@ import static com.github.stokito.jep277.Deprecated.Reason.*;
 public class DeprecatedClass {
     final DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ");
 
-    @Deprecated(value = {DANGEROUS}, since = "1.0", replacement = "java.text.SimpleDateFormat#SimpleDateFormat")
+    @Deprecated(value = {DANGEROUS}, since = "1.0", replacement = "java.time.format.DateTimeFormatter#ofPattern(String)")
     public DateFormat getDateFormatter() {
         return dateFormat;
     }
